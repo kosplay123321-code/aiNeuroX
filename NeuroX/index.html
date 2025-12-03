@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NeuroX — Будущее начинается с ИИ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#070607;
+      --accent:#6c5ce7;
+      --glass: rgba(255,255,255,0.06);
+      --card-bg: #181818;
+      --radius:32px;
+      --shadow: 0 8px 30px rgba(0,0,0,0.6);
+      --text-light:#dbe9ff;
+      --text-dark:#1b0d00;
+    }
+
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      background: var(--bg);
+      font-family:Inter, sans-serif;
+      color: var(--text-light);
+      padding:40px 20px;
+    }
+
+    header{
+      max-width:1100px;
+      margin:0 auto 40px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .brand{font-weight:800;font-size:28px;}
+    nav{display:flex;gap:18px;}
+    nav a{color:#ccc;text-decoration:none;font-size:14px;}
+
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+      display:flex;
+      flex-direction:column;
+      gap:32px;
+    }
+
+    .row{
+      display:flex;
+      gap:24px;
+      align-items:center;
+      width:100%;
+      flex-wrap: wrap;
+    }
+    .reverse{flex-direction: row-reverse;}
+
+    .card{
+      flex:1;
+      background: var(--card-bg);
+      padding:26px;
+      border-radius:28px;
+      box-shadow: var(--shadow);
+      min-height: 280px;
+    }
+    .card.large{
+      padding:32px;
+      border-radius:48px;
+    }
+
+    .text{font-size:15px;line-height:1.5;color: var(--text-light);}
+
+    .logo, .icon-box{
+      flex-shrink: 0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-width: 250px;
+      min-height: 280px;
+    }
+
+    .logo{
+      background:#ffffff;
+      border-radius:80px;
+    }
+
+    .icon-box{
+      border-radius:18px;
+      background: rgba(255,255,255,0.06);
+    }
+
+    ul{margin:8px 0 0 16px;}
+
+    /* Цвет текста для MidJourney */
+    .midjourney .text{
+      color:#f0e6d2;
+    }
+
+    /* Адаптивность */
+    @media (max-width:768px){
+      .row, .reverse{
+        flex-direction: column;
+        align-items: center;
+      }
+      .card, .icon-box, .logo{
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+    /* FOOTER */
+.nx-footer {
+  margin-top: 60px;
+  padding: 40px 20px;
+  background: #c0b3ff; /* нежно-фиолетовый фон как в макете */
+}
+
+.nx-footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nx-footer-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1d1a36;
+  margin: 0;
+}
+
+.nx-footer-sub {
+  margin-top: 6px;
+  font-size: 15px;
+  color: #2f2b45;
+  max-width: 450px;
+}
+
+.nx-footer-socials {
+  display: flex;
+  gap: 18px;
+}
+
+.nx-footer-socials img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.9;
+  transition: 0.2s;
+}
+
+.nx-footer-socials img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Адаптивность */
+@media (max-width: 700px) {
+  .nx-footer-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">Будущее начинается с ИИ</div>
+  <nav>
+    <a href="#chatgpt">Chat-GPT</a>
+    <a href="#deepseek">DeepSeek</a>
+    <a href="#neurox">NeuroX</a>
+    <a href="#gemini">Gemini</a>
+    <a href="#midjourney">MidJourney</a>
+    <a href="#contacts">Contacts</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <!-- NeuroX -->
+  <section id="neurox" class="row">
+    <div class="card large">
+      <h1>NeuroX — умная платформа искусственного интеллекта</h1>
+      <p class="text">
+        NeuroX — это универсальная платформа ИИ, созданная для того, чтобы помочь людям работать быстрее,
+        творить свободнее и находить решения там, где раньше требовалось время и ресурсы.
+      </p>
+      <p class="text" style="margin-top:10px">
+        Сервис объединяет инструменты генерации текста, улучшения изображений, анализа информации и
+        интеллектуальной автоматизации — всё в одном удобном пространстве.
+      </p>
+    </div>
+
+    <div class="logo">
+      <img src="ChatGPT Image 24 нояб. 2025 г., 14_53_25.png" alt="NeuroX" style="max-width:160px;">
+    </div>
+  </section>
+
+  <!-- ChatGPT -->
+  <section id="chatgpt" class="row">
+    <div class="icon-box" style="width:300px; height:273px; background:white; border-radius:80px;">
+      <a href="https://chatgpt.com/" target="_blank">
+      <img src="ChatGPT-Logo.png" alt="ChatGPT" style="max-width:100px;">
+      </a>
+    </div>
+
+    <div class="card chatgpt">
+      <div class="text">
+        <strong>ChatGPT</strong> — это продвинутый искусственный интеллект, созданный компанией OpenAI.
+        <p style="margin-top:8px">Он может:</p>
+        <ul>
+          <li>отвечать на вопросы</li>
+          <li>объяснять сложные темы</li>
+          <li>создавать тексты, сайты, сценарии, промты</li>
+          <li>писать код</li>
+          <li>улучшать фото</li>
+          <li>придумывать идеи</li>
+          <li>общаться как живой человек</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gemini -->
+  <section id="gemini" class="row">
+    <div class="card gemini">
+      <div class="text">
+        <strong>Gemini</strong> — генеративный чат-бот и виртуальный помощник на основе искусственного интеллекта , разработанный Google . Основанный на одноимённой большой языковой модели (LLM) , он был запущен в марте 2023 года в ответ на рост популярности ChatGPT от OpenAI
+        <p style="margin-top:8px;">Что умеет:</p>
+        <ul>
+          <li>писать тексты</li>
+          <li>создавать изображения</li>
+          <li>анализировать аудио и видео</li>
+          <li>писать и исправлять код</li>
+          <li>контекст до 1 000 000 токенов</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="icon-box" style="border-radius:24px;background:linear-gradient(135deg,#1b1f78,#4fd1c5);">
+      <a href="https://gemini.google.com/?hl=ru" target="_blank">
+      <img src="ИЙФШ.png" style="max-width:70px;">
+      </a>
+    </div>
+  </section>
+
+  <!-- MidJourney -->
+  <section id="midjourney" class="row">
+    <div class="icon-box" style="background:#2b1b00;border-radius:20px;">
+      <a href="https://www.google.com/aclk?sa=L&pf=1&ai=DChsSEwjV7syVnJyRAxVMnIMHHa-_HP0YACICCAEQARoCZWY&co=1&ase=2&gclid=CjwKCAiAlrXJBhBAEiwA-5pgwjRnlSLczN-IPMy7Y4RxavqnNyQFms-3Hbs-E9exLIZiBYI1_bE-oBoC1gQQAvD_BwE&cid=CAAS3gHkaJUISELVQTcrqOvCUK0OV3HIDjXI-qPQYUObOASCCx7IHstFB71dtz1ZnspVhDkH-SU08-K4Ygbs2HULwsCQ_G5nb5MZCQBRHDsY-dGwFsGovSShV6IUi63_q7FP-UbYLvX4iJIFDQe6lszXyj1RxlFCJJkQkUhOMdLhRVWmeWY7F8yUarBpgnhv0av1p_ExKCNZOBC9LD8jGPDYJVnzDErseDGQlpuy5tIivdD7WpmobpYadw539znYjZj5d0VWDtvTgHV59U-QbK9qsbHOVcZAovU7gaAUqQ2KC24&cce=2&category=acrcp_v1_32&sig=AOD64_2HypcvaKDXL0db0yFkfh4p-mDnTg&q&nis=4&adurl=https://www.seaart.ai/create/image?%26utm_source%3Dgoogle%26ad%3DWWGGKW043423%26gad_source%3D1%26gad_campaignid%3D22562914076%26gbraid%3D0AAAAAp7Gc8bmz5iyWOxMq7sWIEo3L8yyq%26gclid%3DCjwKCAiAlrXJBhBAEiwA-5pgwjRnlSLczN-IPMy7Y4RxavqnNyQFms-3Hbs-E9exLIZiBYI1_bE-oBoC1gQQAvD_BwE&ved=2ahUKEwixxcaVnJyRAxVU3AIHHT4xGLMQ0Qx6BAgNEAE" target="_blank">
+      <img src="pngwing.com.png" style="max-width:100px;filter:brightness(0) invert(1);">
+      </a>
+    </div>
+
+    <div class="card midjourney">
+      <div class="text">
+        <strong>MidJourney</strong> — это программа и служба генеративного искусственного интеллекта , созданная и поддерживаемая «независимой исследовательской лабораторией» Midjourney, Inc., расположенной в Сан-Франциско . Midjourney генерирует изображения на основе описаний на естественном языке , называемых подсказками , аналогично DALL-E от OpenAI и Stable Diffusion от Stability AI . [ 1 ] [ 2 ] Это одна из технологий бума ИИ ..
+        <p style="margin-top:8px;">
+          Популярен среди художников и дизайнеров благодаря художественному стилю
+          и высокому качеству генераций.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DeepSeek -->
+  <section id="deepseek" class="row">
+    <div class="card deepseek">
+      <div class="text">
+        <strong>Что такое DeepSeek Модели DeepSeek описываются как «открытые веса», что означает, что точные параметры находятся в открытом доступе, хотя некоторые условия использования отличаются от типичного программного обеспечения с открытым исходным кодом . [ 16 ] [ 10 ] Сообщается, что компания нанимает исследователей искусственного интеллекта из ведущих китайских университетов [ 14 ] , а также нанимает специалистов из других традиционных областей компьютерной науки, чтобы расширить знания и возможности своих моделей. [ 12 ]</strong>
+        <ul>
+          <li>Китайская компания, создающая большие языковые модели.</li>
+          <li>Основана в 2023 году.</li>
+          <li>Штаб-квартира: Ханчжоу.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="icon-box" style="background:linear-gradient(180deg,#17c3ff,#6be7d6);border-radius:18px;">
+      <img src="DeepSeek-Emblem.png" style="max-width:80px;">
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<!-- FOOTER -->
+<footer id="contacts" class="nx-footer">
+  <div class="nx-footer-container">
+    
+    <div class="nx-footer-brand">
+      <h2 class="nx-footer-title">NerouX</h2>
+      <p class="nx-footer-sub">
+        Это новая современная платформа искусственного интеллекта.
+      </p>
+    </div>
+
+    <div class="nx-footer-socials">
+      <a href="https://www.whatsapp.com/?lang=ru"><img src="icons8-whatsapp-48.png" alt="whatsapp"></a>
+      <a href="https://www.instagram.com/"><img src="icons8-instagram.png" alt="instagram"></a>
+      <a href="https://web.telegram.org/a/"><img src="telegram.png" alt="telegram"></a>
+      <a href="https://www.tiktok.com/"><img src="tiktok.png" alt="tiktok"></a>
+      <a href="https://workspace.google.com/intl/ru/gmail/"><img src="icons8-gmail-48.png" alt="mail"></a>
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+</html>
+
